@@ -17,75 +17,106 @@ function imprimeMensagem() {
 // EXERCÍCIOS PARA FAZER ------------------------------------------------------------------
 
 // EXERCÍCIO 01
-function calculaAreaRetangulo() {
-  // implemente sua lógica aqui
+function calculaAreaRetangulo(altura, largura) {
+
+altura = Number(prompt('Digite um numero'))
+largura = Number(prompt('Digite um numero'))
+ 
+ 
+ console.log(altura*largura)
+
 
 }
 
 // EXERCÍCIO 02
-function imprimeIdade() {
-  // implemente sua lógica aqui
+function imprimeIdade(nascimento, hoje) {
+  nascimento = Number(prompt('Digite o ano que você nasceu'))
+  hoje = Number(prompt('Digite o ano atual'))
+
+  console.log(nascimento - hoje)
 
 }
 
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
-  // implemente sua lógica aqui
+ 
+
+  return peso / (altura* altura)
+
 
 }
 
 // EXERCÍCIO 04
-function imprimeInformacoesUsuario() {
-  // implemente sua lógica aqui
-  // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
+
+function imprimeInformacoesUsuario(uName, uIdade, uMail) {
+    uName = prompt("Digite seu nome")
+    uIdade = Number(prompt("Digite sua idade"))
+    uMail = prompt("Digite seu mail")
+
+  console.log(`Meu nome é ${uName}, tenho ${uIdade} anos, e o meu email é ${uMail}.`)
+
 
 }
 
 // EXERCÍCIO 05
-function imprimeTresCoresFavoritas() {
-  // implemente sua lógica aqui
+function imprimeTresCoresFavoritas(cor1, cor2, cor3) {
+  cor1 = prompt("Digite sua cor favorita")
+  cor2 = prompt("Digite sua cor favorita")
+  cor3 = prompt("Digite sua cor favorita")
+
+  const cores = [cor1, cor2, cor3 ]
+  console.log(cores)
 
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
-  // implemente sua lógica aqui
+  return (string).toUpperCase()
 
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  // implemente sua lógica aqui
+  return custo / valorIngresso
 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
+  return string1.length === string2.length
+
 
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
+  return array[0]
+
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+  return array[array.length-1]
 
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
+  let lista1 = array[0]
+  let lista2 = array[array.length-1]
+  array[0] = lista2
+  array[array.length - 1] = lista1
+
+  return array
+  
 
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-  // implemente sua lógica aqui
+  return string1.toLowerCase() === string2.toLowerCase()
+  
 
 }
 
